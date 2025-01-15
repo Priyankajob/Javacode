@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite"  parallel="classes" >
+    <test name="TestGroup1" verbose="2" preserve-order="true">
+        <!-- Test class 1 -->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="smoke"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+        <classes>
+            <class name="REST.Atomation27">
+                <methods>
+                    <include name="newtest"/>
+                </methods>
+            </class>
+            <!-- Test class 2 -->
+            <class name="REST.Boolianmehod">
+                <methods>
+                    <include name="boolian"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
