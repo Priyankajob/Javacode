@@ -37,7 +37,7 @@ public class Brokenlink {
         driver.get("http://www.deadlinkcity.com/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(500));
        List<WebElement> alllink = driver.findElements(By.tagName("a"));
-       int linkcount = alllink.size();
+          int linkcount = alllink.size();
         System.out.println("Total number of Link" +linkcount);
         for(WebElement linkhref:alllink)
         { String href = linkhref.getAttribute("href");
